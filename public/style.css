@@ -95,18 +95,22 @@ h1 {
 }
 
 .one {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     align-items: center;
     margin: auto;
     width: 80%;
+    text-align: justify;
 }
 
 .one img {
-    width: 80%;
+    width: 25vw;
+    height: 35vh;
+    margin-right: 5vw;
+    text-align: center;
 }
 
 .text-one p {
+    width: 80%;
     color: #fff;
 }
 
