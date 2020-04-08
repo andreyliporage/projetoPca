@@ -146,6 +146,11 @@ h2 {
     cursor: pointer;
 }
 
+.card:hover {
+    border:1px solid white;
+    transform: translateY(-1px);
+}
+
 .card__image-container img{
     width: 100%;
     border-radius: 6px 6px 0 0;
@@ -153,6 +158,7 @@ h2 {
 
 .card__content,
 .card__info {
+    font-size: 18px;
     padding: 16px;
 }
 
@@ -171,6 +177,7 @@ h2 {
 
 .card__info span {
     color: red;
+    font-weight: bold;
 }
 
 /* === Modal === */ 
