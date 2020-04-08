@@ -92,6 +92,27 @@ h1 {
     text-align: center;
     margin-bottom: 10vh;
     color: #fff;
+    position: relative;
+}
+
+.title::before {
+    content: "";
+    border-top: 2px solid white;
+    background-color: white;
+    top: 0;
+    left: 37.9vw;
+    position: absolute;
+    width: 24.2vw;
+}
+
+.title::after {
+    content: "";
+    border-top: 2px solid white;
+    background-color: white;
+    top: 8vh;
+    left: 37.9vw;
+    position: absolute;
+    width: 24.2vw;
 }
 
 .one {
