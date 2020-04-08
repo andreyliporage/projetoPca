@@ -42,7 +42,7 @@ nav a {
     position: relative;
 }
 
-nav a.active {
+nav a.bold {
     font-weight: bold;
 }
 
@@ -181,6 +181,7 @@ h2 {
     height: 100%;
     position: fixed;
     top: 0;
+    visibility: hidden;
 }
 
 .modal {
@@ -188,4 +189,17 @@ h2 {
     width: 90%;
     height: 90%;
     margin: 5vh auto;
+    position: relative;
+}
+
+.close-modal .material-icons {
+    color: black;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.modal-overlay.active {
+    visibility: visible;
 }
