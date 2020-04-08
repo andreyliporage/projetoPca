@@ -92,7 +92,6 @@ h1 {
     text-align: center;
     margin-bottom: 10vh;
     color: #fff;
-    position: relative;
 }
 
 .one {
@@ -116,6 +115,15 @@ h1 {
 }
 
 /* === Multimídia === */
+
+h2 {    
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    font-family: 'Baloo 2', cursive;
+    color: #fff;    
+    font-size: 36px;
+}
 
 .cards {
     display: grid;
