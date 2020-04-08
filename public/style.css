@@ -95,26 +95,6 @@ h1 {
     position: relative;
 }
 
-.title::before {
-    content: "";
-    border-top: 2px solid white;
-    background-color: white;
-    top: 0;
-    left: 37.9vw;
-    position: absolute;
-    width: 24.2vw;
-}
-
-.title::after {
-    content: "";
-    border-top: 2px solid white;
-    background-color: white;
-    top: 8vh;
-    left: 37.9vw;
-    position: absolute;
-    width: 24.2vw;
-}
-
 .one {
     display: flex;
     align-items: center;
@@ -134,6 +114,8 @@ h1 {
     width: 80%;
     color: #fff;
 }
+
+/* === Multimídia === */
 
 .cards {
     display: grid;
