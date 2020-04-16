@@ -30,9 +30,13 @@ function initMap() {
             position: props.coords,
             map: map
         })
-    }
 
-   
+        for(var i = 0; i < markers.length; i++) {
+            marker.addListener("click", function() {
+                modalOverlay.classList.add("active")
+            })
+        }
+    }   
 }
 
 for (item of menuItems) {
