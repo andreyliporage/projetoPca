@@ -277,6 +277,16 @@ h2 {
     position: absolute;
 }
 
+/* === Ocean === */
+
+#map {
+    width: 50%;
+    height: 500px;
+    margin: 5vh auto;
+    border: 5px solid #ffffff;
+    box-shadow: 1px 1px 15px -10px black;
+}
+
 /* === Footer === */
 
 footer {

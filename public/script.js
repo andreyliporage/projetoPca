@@ -1,5 +1,39 @@
 const currentPage = location.pathname
 const menuItems = document.querySelectorAll("header nav a")
+var map
+
+function initMap() {
+
+    map = new google.maps.Map(document.getElementById("map"), {
+        center: {lat: 33.268751, lng: 17.514737},
+        zoom: 1.25
+    })
+
+    var markers = [
+        {
+            coords: {lat: -19.351787, lng: -144.814159},
+        },
+        {
+            coords: {lat: 30.865259, lng: -41.982129}
+        },
+        {
+            coords: {lat: -21.819898, lng: 79.834276}
+        }
+    ]
+
+    for(var i = 0; i < markers.length; i++) {
+        addMarker(markers[i])
+    }
+
+    function addMarker(props) {
+        var marker = new google.maps.Marker({
+            position: props.coords,
+            map: map
+        })
+    }
+
+   
+}
 
 for (item of menuItems) {
     if(currentPage == item.getAttribute("href")) {
