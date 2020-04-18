@@ -385,4 +385,18 @@ footer p {
         display: block;
         margin-bottom: 20px;
     }
+
+    .main-container {
+        height: 420px;
+    }
+
+    .main-container-content {
+        grid-template-columns: 1fr;
+    }
+
+    .main-container-content img {
+        margin-left: 80px;
+        width: 200px;
+    }
+
 }
