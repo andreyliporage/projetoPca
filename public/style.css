@@ -209,7 +209,7 @@ h1 {
 .cards,
 .pictures {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     align-items: center;
     text-align: center;
@@ -222,11 +222,12 @@ h1 {
     background-color: #0e1bd480;
     border-radius: 6px;
     cursor: pointer;
+    box-shadow: 1px 1px 5px -5px black;
+    transition-duration: 400ms;
 }
 
 .card:hover {
-    border:1px solid white;
-    transform: translateY(-1px);
+    transform: translateY(-7px);
 }
 
 .card__image-container img{
@@ -328,9 +329,44 @@ footer p {
 
 /* === Medias queries */
 
+@media (max-width: 1180px) {
+    #map {
+        width: 60%;
+        height: 450px;
+    }
+}
+
+@media (max-width: 950px) {
+    #map {
+        width: 65%;
+        height: 400px;
+    }
+}
+
+@media (max-width: 880px) {
+    #map {
+        width: 70%;
+        height: 390px;
+    }
+}
+
 @media (max-width: 875px) {
     html {
         font-size: 50%;
+    }
+}
+
+@media (max-width: 870px) {
+    #map {
+        width: 75%;
+        height: 350px;
+    }
+}
+
+@media (max-width: 780px) {
+    #map {
+        width: 80%;
+        height: 350px;
     }
 }
 
@@ -345,7 +381,6 @@ footer p {
         position: absolute;
         right: 27px;
         top: 15px;
-        transition-duration: 0.5s;
     }
 
     .one, .two, .three {
@@ -353,6 +388,7 @@ footer p {
         height: 5px;
         width: 100%;
         margin: 6px auto;
+        transition-duration: 0.7s;
     }
 
     .menu-section.on {
