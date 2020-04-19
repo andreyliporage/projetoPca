@@ -453,11 +453,19 @@ footer p {
         .main-container .main-container-content img {
             margin-left: 50px;
         }
+        
+        .main-container {
+            height: 450px;
+        }
     }
 
     @media (max-width: 320px) {
         .main-container .main-container-content img {
             margin-left: 25px;
+        }
+
+        .main-container {
+            height: 500px;
         }
     }
 
