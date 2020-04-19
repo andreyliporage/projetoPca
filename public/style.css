@@ -224,6 +224,7 @@ h1 {
     cursor: pointer;
     box-shadow: 1px 1px 5px -5px black;
     transition-duration: 400ms;
+    margin-bottom: 5rem;
 }
 
 .card:hover {
@@ -432,6 +433,7 @@ footer p {
         line-height: 5rem;
         display: block;
         margin-bottom: 20px;
+        text-align: center;
     }
 
     .main-container {
