@@ -449,4 +449,16 @@ footer p {
         width: 200px;
     }
 
+    @media (max-width: 375px) {
+        .main-container .main-container-content img {
+            margin-left: 50px;
+        }
+    }
+
+    @media (max-width: 320px) {
+        .main-container .main-container-content img {
+            margin-left: 25px;
+        }
+    }
+
 }
